@@ -1,0 +1,114 @@
+$small-card-bg-color: #ffffff;
+$offer-bg-color: #f2f4f7;
+$view-button-bg-color: #1b88f4;
+$view-button-hover-scale: 1.02;
+
+.small-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 333px;
+  max-width: 333px;
+  height: 425px;
+  background: $small-card-bg-color;
+  border: none;
+  border-radius: 12px;
+  color: #626e79;
+  margin: 0px;
+  padding: 20px 0px;
+
+  img {
+    width: 141px;
+    height: 103px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .offer-sec {
+    display: flex;
+    align-items: start;
+    color: #074786;
+    font-size: 13px;
+    justify-items: start;
+    min-width: 292px;
+    max-width: 292px;
+
+    .offer {
+      background: $offer-bg-color;
+      border: none;
+      border-radius: 8px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-right: 5px;
+    }
+  }
+
+  .heading {
+    color: #626e79;
+    font-weight: bold;
+    align-self: center;
+  }
+
+  .price-sec {
+    display: flex;
+    gap: 18px;
+    align-items: end;
+    min-width: 292px;
+    max-width: 292px;
+
+    .old {
+      color: #9fa9b3;
+      font-size: 14px;
+    }
+
+    .new {
+      color: #5c6874;
+      font-size: 20px;
+    }
+
+    .price-sec-offer {
+      color: #ef4c5d;
+      font-size: 13px;
+    }
+  }
+
+  .view-button {
+    background-color: $view-button-bg-color;
+    min-width: 292px;
+    max-width: 292px;
+    height: 48px;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale($view-button-hover-scale);
+    }
+  }
+
+  .text {
+    max-width: 292px;
+  }
+}
+
+.small-card-data {
+  width: 100%;
+
+  h1 {
+    color: #2C384A;
+    font-size: 32px;
+  }
+
+  .small-card-data-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

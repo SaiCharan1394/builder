@@ -1,5 +1,5 @@
 import React from "react";
-import "./SmallCard.css";
+import "./SmallCard.scss";
 const SmallCard = ({
   image,
   offer,

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./MainCard.css";
+import "./MainCard.scss"; 
 import blueDropDown from "../assets/blue-drop-down.png";
 
 const MainCard = ({
@@ -20,18 +20,18 @@ const MainCard = ({
   ratingText,
   servicesIcon,
   servicesText,
-  offer
+  offer,
 }) => {
   const [showMoreOpen, setShowMoreOpen] = useState(false);
 
   return (
     <div className="main-card">
-      {suggestionValue ? (
+      {suggestionValue && (
         <div className="best-box">
           <img src={suggestionIcon} alt="Suggestion Icon" />
           <div>{suggestionText}</div>
         </div>
-      ) : null}
+      )}
       <div className="card-no">
         <p>{cardNo}</p>
       </div>
@@ -46,7 +46,7 @@ const MainCard = ({
             {headingText}
           </p>
         </div>
-        {showMoreOpen && (<div className="offer">{offer}</div>)}
+        {showMoreOpen && <div className="offer">{offer}</div>}
         <div className="sub-heading">
           <p>{subHeading}</p>
           {!showMoreOpen && (
@@ -72,7 +72,7 @@ const MainCard = ({
             <div className="heading">Why we love it</div>
             {servicesIcon.split(",").map((icon, index) => (
               <div className="icon-text" key={`icon_${index}`}>
-                <img src={`${icon.trim()}`} className="icon" />
+                <img src={`${icon.trim()}`} className="icon" alt="Service Icon" />
                 <div className="service-text">{`${servicesText
                   .split(",")
                   [index].trim()}`}</div>
@@ -80,11 +80,11 @@ const MainCard = ({
             ))}
           </div>
         )}
-        <div className={`show-more ${showMoreOpen &&("button-after-click")}`}>
-          <button  onClick={() => setShowMoreOpen((prevState) => !prevState)}>
+        <div className={`show-more ${showMoreOpen && "button-after-click"}`}>
+          <button onClick={() => setShowMoreOpen((prevState) => !prevState)}>
             {!showMoreOpen ? "Show More" : "Show Less"}
           </button>
-          {!showMoreOpen ? <img src={blueDropDown} alt="Blue Drop Down" /> : ""}
+          {!showMoreOpen && <img src={blueDropDown} alt="Blue Drop Down" />}
         </div>
       </div>
       <div className="card-rating-sec">

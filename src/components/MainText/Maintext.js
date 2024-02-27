@@ -1,5 +1,5 @@
 import React from "react";
-import "./MainText.css";
+import "./MainText.scss";
 import tickmark from "../assets/tickmark.png";
 import imark from "../assets/imark.png";
 import dropdown from "../assets/dropdown.png";
@@ -35,7 +35,7 @@ const Maintext = () => {
         <div>Tooling</div>
         <div>BlueHosting</div>
       </div>
-      <div className="page-indicater">
+      <div className="page-indicator">
       Home
         <li>Hosting for all</li>
         <li>Hosting</li>

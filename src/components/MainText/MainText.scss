@@ -1,0 +1,73 @@
+
+
+$base-font-size: 14px;
+$main-text-color: #4b5665;
+$border-color: #e1e4e6;
+$heading-color: #2c384a;
+$services-bg-color: #ffffff;
+$services-padding: 13px 20px;
+$services-border-radius: 12px;
+$arrow-image-url: "https://i.ibb.co/5ndwhxw/arrow.png";
+
+.main-text {
+  max-width: 1024px;
+  margin: 20px auto 40px auto;
+  font-size: $base-font-size;
+  color: $main-text-color;
+
+  hr {
+    border: $border-color solid 1.33px;
+  }
+
+  .heading {
+    font-size: 48px;
+    color: $heading-color;
+  }
+
+  .time {
+    display: flex;
+  }
+
+  .update-disclosure {
+    display: flex;
+    flex-grow: 1;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+
+    &-child {
+      display: flex;
+      gap: 8px;
+    }
+  }
+
+  .services {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 10px auto;
+
+    li {
+      background-color: $services-bg-color;
+      padding: $services-padding;
+      border: none;
+      border-radius: $services-border-radius;
+    }
+  }
+
+  .update-disclosure-child2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .page-indicator {
+    display: flex;
+    gap: 10px;
+
+    li {
+      list-style-image: url("https://i.ibb.co/5ndwhxw/arrow.png");
+    }
+  }
+}

@@ -1,0 +1,35 @@
+$navbar-bg-color: #212731;
+$navbar-text-color: #d1d6da;
+$navbar-search-bar-bg: #ffffff;
+$navbar-search-bar-border: 1px solid black;
+$navbar-search-bar-radius: 8px;
+$navbar-search-bar-padding-left: 40px;
+
+.navbar {
+  background-color: $navbar-bg-color;
+  min-height: 64px;
+  max-width: 100%;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  color: $navbar-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.navbar-search-img {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  margin: 10px;
+}
+
+.navbar-search-bar input {
+  background-color: $navbar-search-bar-bg;
+  width: 258px;
+  height: 37px;
+  border: $navbar-search-bar-border;
+  border-radius: $navbar-search-bar-radius;
+  padding-left: $navbar-search-bar-padding-left;
+}

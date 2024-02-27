@@ -2,18 +2,19 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import MainCardData from "../MainCard/MainCardData";
-import "./Body.css"
 import SmallCardData from "../SmallCard/SmallCardData";
 import Maintext from "../MainText/Maintext";
 import SignUp from "../SignUp.js/SignUp";
+import "./Body.scss"; 
+
 const Body = () => {
   return (
     <div className="container">
       <Navbar />
-      <Maintext/>
+      <Maintext />
       <MainCardData />
-      <SmallCardData/>
-      <SignUp/>
+      <SmallCardData />
+      <SignUp />
       <Footer />
     </div>
   );

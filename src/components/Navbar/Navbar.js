@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import "./Navbar.scss";
 import search from "../assets/magnifying-glass-icon.png";
-import news from "../assets/newsfeed.png";
 
 const Navbar = () => {
   return (
